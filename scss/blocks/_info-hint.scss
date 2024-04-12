@@ -1,0 +1,48 @@
+.info-hint {
+    position: absolute;
+    top: -26px;
+    left: 50%;
+
+    transform: translate(-50%, -100%);
+
+    display: flex;
+    gap: 8px;
+
+    padding-top: 12px;
+    justify-content: center;
+
+    background-image: url(../../img/tooltip.svg);
+    width: 112px;
+    height: 56px;
+}
+.info-hint__radio {
+    display: none;
+}
+
+.info-hint__radio:checked + .info-hint__radio-fake{
+
+    background-image: url('../../img/icons/checkbox.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.info-hint__radio-fake {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background-color: gray;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+
+
+    &--orange {
+        background-color: var(--ui-orange);
+    }
+    &--ocean {
+        background-color: var(--ui-ocean);
+    }
+    &--gray {
+        background-color: var(--ui-gray);
+    }
+}
