@@ -11,7 +11,7 @@
     padding-top: 12px;
     justify-content: center;
 
-    background-image: url(../../img/tooltip.svg);
+    background-image: url(./../img/tooltip.svg);
     width: 112px;
     height: 56px;
 }
@@ -21,7 +21,7 @@
 
 .info-hint__radio:checked + .info-hint__radio-fake{
 
-    background-image: url('../../img/icons/checkbox.svg');
+    background-image: url('./../img/icons/checkbox.svg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
