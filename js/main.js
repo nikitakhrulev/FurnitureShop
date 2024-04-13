@@ -18,3 +18,23 @@ function closeHint() {
 infoHints.forEach(el => el.addEventListener('click', function(evt) {
     evt.stopPropagation();
 }))
+
+
+//Swiper slider
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    
+    loop: true,
+
+    slidesPerView: 4,
+    spaceBetween: 42,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '#sliderNext',
+      prevEl: '#sliderPrev',
+    },
+
+  });

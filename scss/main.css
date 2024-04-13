@@ -142,7 +142,7 @@ html, body {
 .header {
   padding-top: 40px;
   background-color: var(--footer-bg);
-  background-image: url(../../img/header/header-bg.jpg);
+  background-image: url(./../img/header/header-bg.jpg);
   aspect-ratio: 1440/1084;
   background-size: cover;
   color: var(--header-text-color);
@@ -430,8 +430,6 @@ html, body {
 
 .products__slider {
   margin-bottom: 60px;
-  display: flex;
-  justify-content: center;
 }
 
 .products__link {
@@ -485,6 +483,7 @@ html, body {
 }
 
 .card__image {
+  margin-top: 50px;
   height: 240px;
   background-color: #FAFAFA;
   border-radius: 20px 20px 0 0;
@@ -559,4 +558,35 @@ html, body {
 }
 .card__button:hover {
   opacity: 0.8;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__btn {
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.06);
+  background: #fff;
+  border-radius: 50%;
+  padding: 11px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.slider__btn--prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
 }/*# sourceMappingURL=main.css.map */
