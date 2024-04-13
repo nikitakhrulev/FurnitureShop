@@ -574,13 +574,13 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
 }
 
 .slider__btn--prev {
   position: absolute;
   top: 50%;
   left: 0;
+  z-index: 1;
   transform: translate(-50%, -50%);
 }
 
@@ -588,5 +588,6 @@ html, body {
   position: absolute;
   top: 50%;
   right: 0;
+  z-index: 1;
   transform: translate(50%, -50%);
 }/*# sourceMappingURL=main.css.map */
