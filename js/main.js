@@ -55,3 +55,16 @@ const swiper = new Swiper('.swiper', {
     },
 
   });
+
+
+
+  // products-tabs-logic
+
+  const tabs = document.querySelectorAll('.tab-controls__btn');
+
+  tabs.forEach(el => el.addEventListener('click', handleTabs));
+
+  function handleTabs() {
+    tabs.forEach(el => el.classList.remove('tab-controls__btn--active'))
+    this.classList.add('tab-controls__btn--active')
+  }

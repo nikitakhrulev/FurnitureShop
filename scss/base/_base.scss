@@ -10,6 +10,11 @@ html, body {
     max-width: 1310px;
     padding: 0 15px;
     margin: 0 auto;
+
+
+    &--small {
+        max-width: 1094px;
+    }
 }
 .hidden {
     display: none !important;
@@ -33,4 +38,13 @@ html, body {
     &--large {
         font-size: 18px;
     }
+}
+
+.logo {
+    align-self: center;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: var(--header-text-color)!important;
 }

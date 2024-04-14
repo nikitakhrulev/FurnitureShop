@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 
     border: 0.86px solid rgba(255, 255, 255, 0.6);
     border-radius: 42px;
@@ -18,6 +19,7 @@
     line-height: 150%;
     font-weight: 500;
     color: #fff;
+    flex-grow: 1;
 
     &::placeholder {
         color: #fff;
@@ -30,4 +32,6 @@
     padding: 11px;
     width: 40px;
     height: 40px;
+
+    flex-shrink: 0;
 }
